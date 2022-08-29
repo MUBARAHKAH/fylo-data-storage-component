@@ -26,8 +26,8 @@ The challenge was designed for both desktop and mobile screen users.
 
 ### Links
 ### Links
-- Solution URL: [Github](https://github.com/MUBARAHKAH/Hudle-Landing-Page.git)
-- Live Site URL: [Livesite](https://mubarahkah.github.io/Hudle-Landing-Page/)
+- Solution URL: [Github](https://github.com/MUBARAHKAH/fylo-data-storage-component.git)
+- Live Site URL: [Livesite](https://mubarahkah.github.io/fylo-data-storage-component/)
 
 ## My process
 
