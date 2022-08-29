@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&family=Raleway:wght@400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*-------Root------*/
+/*----------------*/
+:root{
+  --icon-pale-blue: hsl(243, 100%, 93%);
+  --icon-dark-blue: hsl(228, 56%, 26%);
+  --text-grayish: hsl(229, 7%, 55%);
+  --icon-vdb: hsl(229, 57%, 11%);
+}
+
+/*-------body------*/
+/*----------------*/
+
+body{
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: var(--icon-pale-blue);
+
+}
+
+/*-------main------*/
+/*----------------*/
+.container{
+  background: url('./images/bg-mobile.png');
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+div .fylo-container{
+  width: 300px;
+  height: 180px;
+  background-color: var(--icon-dark-blue);
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px 100px 10px 10px;
+}
+
+div .fylo-icon{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 25px;
+margin-top: 25px;
+margin-right: 25px;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  background-color: var(--icon-vdb);
+}
+
+.icon:nth-of-type(1){
+  background: url('./images/icon-document.svg');
+  background-color: var(--icon-vdb);
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.icon:nth-of-type(2){
+  background: url('./images/icon-folder.svg');
+  background-color: var(--icon-vdb);
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.icon:nth-of-type(3){
+  background: url('./images/icon-upload.svg');
+  background-color: var(--icon-vdb);
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-position: center;
+  border-radius: 10px;
+}
+
+div .storage{
+  background-color:var(--icon-dark-blue);
+  width: 300px;
+  height: 150px;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+div .storage p{
+  color: #fff;
+  margin-top: 30px;
+  text-align: center;
+  opacity: 0.7;
+}
+
+div .storage-size{
+  color: #fff;
+  font-weight: 700;
+}
+
+div .gradient-container{
+  width: 250px;
+  height: 20px;
+  background-color: var(--icon-vdb);
+  border-radius: 15px 15px 15px 15px;
+  margin-left: 30px;
+  margin-top: 20px;
+  position: relative;
+}
+
+div .gradient{
+  width: 200px;
+  height: 15px;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 15px 15px 15px 15px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.gradient .inner-white{
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+}
+
+.GB-size{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 100px;
+  position: relative;
+  bottom: 23px;
+  left: 5px;
+}
+
+.GB-left{
+  width: 150px;
+  height: 60px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 10px;
+  top: 60px;
+  text-align: center;
+}
+
+div .GB-left-text{
+  position: relative;
+  top: 10px;
+}
+
+div .GB-left-text h1{
+  font-size: 2rem;
+  color: var(--icon-vdb);
+}
+
+div .GB-left-text .left{
+  font-size: 12px;
+  color: var(--text-grayish);
+}
+
+@media(min-width: 1230px){
+  body{
+    width: 100%;
+    margin: 100px auto;
+    background-color: var(--icon-vdb);
+  }
+
+  .container{
+   background: url('./images/bg-desktop.png');
+   background-repeat: repeat;
+    background-position: center;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+div .storage{
+  width: 480px;
+  position: relative;
+  right: 60px;
+}
+
+div .gradient-container{
+  width: 400px;
+  margin-top: 10px;
+}
+
+div .gradient{
+  width: 300px;
+}
+
+div .GB-size{
+  gap: 245px;
+  left: -20px;
+}
+
+div .GB-left{
+  top: -95px;
+  border-radius: 10px;
+  right: -5px;
+}
+
+div .storage p{
+  text-align: left;
+  margin-left: 30px;
+  font-size: 12px;
+}
+
+div .GB-tri{
+  width: 0;
+  height:0;
+  border: 15px solid transparent;
+  border-bottom: 0;
+  border-top: 35px solid white;
+  position: absolute;
+  left: 127px;
+  transform: skew(22deg)
+}
